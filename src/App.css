@@ -20,3 +20,9 @@ body{
   font-family: 'open sans condensed', sans-serif;
   padding: 20px 60px;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
