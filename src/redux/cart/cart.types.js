@@ -1,5 +1,6 @@
 const cartActionTypes = {
-    TOGGLE: 'TOGGLE'
+    TOGGLE: 'TOGGLE',
+    ADD_ITEM: 'ADD_ITEM'
 }
 
 export default cartActionTypes;

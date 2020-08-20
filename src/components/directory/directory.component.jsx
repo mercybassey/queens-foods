@@ -39,7 +39,8 @@ class Directory extends React.Component{
                     size: "large",
                     id:5,
                     linkUrl: " "
-                }
+                },
+                
             ]
         }
     }
