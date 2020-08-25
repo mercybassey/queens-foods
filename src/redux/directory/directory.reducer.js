@@ -4,13 +4,13 @@ const INITIAL_STATE = {
             title: "pizza",
             image: "/images/pizza.jpg",
             id: 1,
-            linkUrl: "shop/Pizza"
+            linkUrl: "shop/pizza"
         },
         {
             title: "cakes",
             image: "/images/cake.jpg",
             id: 2,
-            linkUrl: "shop/Cakes"
+            linkUrl: "shop/cakes"
         },
         {
             title: "drinks",
@@ -30,35 +30,35 @@ const INITIAL_STATE = {
             image: "/images/salad.jpg",
             size: "large",
             id:5,
-            linkUrl: "shop/Salad"
+            linkUrl: "shop/%20salad%20"
         },
         {
             title: "burger",
             image: "/images/burgger.jpg",
             size: "large",
             id: 6,
-            linkUrl: "shop/Burger"
+            linkUrl: "shop/burger"
         },
         {
             title: "pasta",
             image: "/images/pasta.jpg",
             size: "large",
             id: 7,
-            linkUrl: "shop/Pasta"
+            linkUrl: "shop/pasta"
         },
         {
             title: "nigerian-dish",
             image: "/images/nigerian.jpg",
             size: "large",
             id:8,
-            linkUrl: "shop/NigerianDish"
+            linkUrl: "shop/nigeriandish"
         },
         {
             title: "sandwich",
             image: "/images/sandwich.jpg",
             size: "large",
             id: 9,
-            linkUrl: "shop/Sandwich"
+            linkUrl: "shop/sandwich"
         }
         
     ]
