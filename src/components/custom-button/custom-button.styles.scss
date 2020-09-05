@@ -16,6 +16,14 @@
   display: flex;
   justify-content: center;
 
+  @media (max-width:768px) {
+    font-size: 15px;
+    width: auto;
+    padding: 0 25px 0 25px;
+    letter-spacing: 0.2px;
+    
+  }
+
   &:hover {
     background-color: white;
     color: black;

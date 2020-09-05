@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { auth } from '../../firebase/firebase.utils';
+
 import CartIcon from '../cart-icon/card-icon.component';
 import CartDropDown from '../cart-dropdown/cart-dropdown.component';
 import {  selectCartHidden } from '../../redux/cart/cart.selectors';
@@ -13,21 +13,24 @@ import {signOutStart} from '../../redux/user/user.actions'
 
 import { ReactComponent as Logo} from '../../assets/peppes-pizza.svg';
 
+import './header.styles.scss';
 
-import { HeaderContainer, LogoContainer,  OptionsContainer, OptionLink   } from './header.styles';
 
-const Header = ({ currentUser, hidden, signOutStart }) => (
+import { HeaderContainer, LogoContainer,  OptionsContainer, OptionLink } from './header.styles';
+
+const Header = ({ currentUser, hidden, signOutStart,}) => (
+  
     < HeaderContainer>
         < LogoContainer to="/">
             <Logo className="rotate"/>
         </ LogoContainer>
 
-        < OptionsContainer>
-            <OptionLink to='/shop'>
+        < OptionsContainer >
+            <OptionLink to='/shop' >
                 SHOP
             </OptionLink>
 
-            <OptionLink to='/shop'>
+            <OptionLink to='/shop' >
                 CONTACT
             </OptionLink>
             {
@@ -40,13 +43,16 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
                 SIGN IN
               </OptionLink>
              )}
-             <CartIcon />
+             
+                <CartIcon />
+             
         </ OptionsContainer>
        {
            hidden ? null:
-           <CartDropDown />
+            <CartDropDown />
+           
        }
-       
+      
     </ HeaderContainer>
 );
 
